@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300,400,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+body {
+  font-weight: 400;
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  text-align: justify;
+}
+h1 {
+  font-size: 4em;
+  font-family: 'Kaushan Script', cursive;
+  text-align: center;
+}
+h2 {
+  font-size: 2em;
+  text-align: center;
+}
+p {
+  font-size: 1.375em;
+}
+.navbar-brand {
+  font-size: 1.5em;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+}
+.apellido {
+  color: #efb709;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+.navbar-dark .navbar-nav .nav-link a:hover{
+    color: #efb709;
+}
+nav, footer {
+  background-color: #000000;
+}
+.medio-banner {
+  position: absolute;
+  top: 40vh;
+}
+section {
+  padding: 6rem 0;
+}
+.banner {
+  color: white;
+  background-image: url(../img/summerfield.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.experiencia {
+  color:  white;
+  background-color: #DF7401;
+  padding: 0 0 2.5rem 0;
+}
+.portfolio .portfolio-item {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    max-width: 25rem;
+    margin-bottom: 30px;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+.portfolio-modal .close {
+    position: absolute;
+    z-index: 1;
+    right: 1.5rem;
+    top: 0.375rem;
+    font-size: 2.1rem;
+    line-height: 3rem;
+    color: #333;
+    opacity: 1;
+}
+.contact-form {
+  background-color: #333;
+}
+.contact-form h2{
+  color: white;
+}
+footer {
+  color: white;
+  padding: 2em;
+}
+footer i {
+  color: white;
+}
+.btn-warning {
+    color: white;
+    background-color: #efb709;
+    border-color: #efb709;
+}
+@media (max-width: 482px) {
+  h2 {
+    font-size: 1.375em;
+  }
+  p {
+    font-size: 0.75em;
+  }
+  section {
+    padding: 4rem 0;
+  }
+  .img-modal {
+    display: none;
+  }
+ }

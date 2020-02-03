@@ -13,7 +13,7 @@ $(document).ready(function() {
     }
 
     if (this.hash == "#experiencia") {
-      diferencial = 150;
+      diferencial = 100;
     }
 
     if (this.hash == "#portfolio") {
@@ -26,4 +26,7 @@ $(document).ready(function() {
     return false;
   });
   $('[data-toggle="tooltip"]').tooltip();
+  $(".close").click(function(){
+    $("#myAlert").alert("close");
+  });
 });

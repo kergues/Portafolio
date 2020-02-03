@@ -1,30 +1,29 @@
 $(document).ready(function() {
-  $(function() {
-    $("a").click(function(event) {
-      if (this.hash !== "") {
-        event.preventDefault();
+  $('a[href^="#"]').click(function() {
+    var destino = $(this.hash);
+    var diferencial = 0;
+    if (destino.length == 0) {
+      destino = $('a[name="' + this.hash.substr(1) + '"]');
+    }
+    if (destino.length == 0) {
+      destino = $('html');
+    }
+    if (this.hash == "#sec-description") {
+      diferencial = 100;
+    }
 
-        var menu = this.hash;
-        var diferencial = 0;
+    if (this.hash == "#experiencia") {
+      diferencial = 150;
+    }
 
-        if (this.hash == "#sec-description") {
-          diferencial = 3000;
-        }
-
-        if (this.hash == "#experiencia") {
-          diferencial = 170;
-        }
-
-        if (this.hash == "#portfolio") {
-          diferencial = 70;
-        }
-        if (this.hash == "#contact-form") {
-          diferencial = 13;
-        }
-        $("html, body").animate({
-          scrollTop: $(menu).offset().top - diferencial
-        }, 800);
-      }
-    });
-    $('[data-toggle="tooltip"]').tooltip();
+    if (this.hash == "#portfolio") {
+      diferencial = 60;
+    }
+    if (this.hash == "#contact-form") {
+      diferencial = 13;
+    }
+    $('html, body').animate({ scrollTop: destino.offset().top - diferencial }, 500);
+    return false;
+  });
+  $('[data-toggle="tooltip"]').tooltip();
 });

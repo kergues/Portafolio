@@ -64,6 +64,9 @@ section {
   background-color: #DF7401;
   padding: 0 0 2.5rem 0;
 }
+.carousel-slide{
+  color: #333333;
+}
 .portfolio .portfolio-item {
     cursor: pointer;
     position: relative;

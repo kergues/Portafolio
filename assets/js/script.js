@@ -29,4 +29,7 @@ $(document).ready(function() {
   $(".close").click(function(){
     $("#myAlert").alert("close");
   });
+  $('#carousel-Slidesonly').carousel({
+    interval: 5000
+  });
 });

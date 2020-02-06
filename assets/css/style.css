@@ -65,7 +65,14 @@ section {
   padding: 0 0 2.5rem 0;
 }
 .carousel-slide{
-  color: #333333;
+  color: #696767;
+  display: flex;
+  justify-content: center;
+}
+.carousel-inner {
+  position: relative;
+  width: 50vw;
+  overflow: hidden;
 }
 .portfolio .portfolio-item {
     cursor: pointer;
@@ -103,6 +110,11 @@ footer i {
     color: white;
     background-color: #efb709;
     border-color: #efb709;
+}
+@media (max-width:522px){
+  .carousel-slide{
+    display: none;
+  }
 }
 @media (max-width: 482px) {
   h2 {

@@ -111,6 +111,11 @@ footer i {
     background-color: #efb709;
     border-color: #efb709;
 }
+@media (max-width:768px){
+  .carousel-slide{
+    margin-bottom: 0;
+  }
+}
 @media (max-width:522px){
   .carousel-slide{
     display: none;

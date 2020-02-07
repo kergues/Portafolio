@@ -68,6 +68,7 @@ section {
   color: #696767;
   display: flex;
   justify-content: center;
+  padding-bottom: 0;
 }
 .carousel-inner {
   position: relative;

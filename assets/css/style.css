@@ -107,6 +107,15 @@ footer {
 footer i {
   color: white;
 }
+.tooltip{
+  font-size: 1.075em;
+}
+.tooltip-inner{
+  color: #fff;
+  text-align:center;
+  border:solid 1px #fff;
+  border-radius:0.313em;
+}
 .btn-warning {
     color: white;
     background-color: #efb709;
